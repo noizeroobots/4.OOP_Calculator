@@ -10,7 +10,7 @@ public class Main {
         String expression = in.nextLine();
         String f = "f";
 
-        while (expression != "f") {
+        while (expression != "?" && expression.length() > 1) {
             for (int i = 0; i < expression.length(); i++) {
                 if (expression.charAt(i) == '+') {
                     Plus s = new Plus();
@@ -28,20 +28,17 @@ public class Main {
                     Division s = new Division();
                     System.out.println(s.execute(expression, i));
                 }
+            }
+            expression = in.nextLine();
+            for (int i = 0; i < expression.length(); i++) {
                 if (expression.charAt(i) == 'f') {
                     break;
                 }
-//                String f("f");
-//                if (f == expression) {
-//                    System.out.println("The length is: " + expression.length());
-//                }
             }
-
-           expression = in.nextLine();
-            System.out.println("The length is: " + expression.length());
-
         }
-
     }
-
 }
+// Done - Пользователь вводит строку a (операция) b;
+// Done - В зависимости от того, какую операцию ввел пользователь, работает метод того или иного наследника;
+// Done - В результате выводится ответ выполнения операции;
+// Done - Сделать так что бы программа работала циклично.
