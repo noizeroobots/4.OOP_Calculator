@@ -8,6 +8,8 @@ public class Main {
         Scanner in = new Scanner(System.in);
         System.out.println("Input expression: ");
         String expression = in.nextLine();
+        String f = "f";
+
         while (expression != "f") {
             for (int i = 0; i < expression.length(); i++) {
                 if (expression.charAt(i) == '+') {
@@ -26,12 +28,20 @@ public class Main {
                     Division s = new Division();
                     System.out.println(s.execute(expression, i));
                 }
+                if (expression.charAt(i) == 'f') {
+                    break;
+                }
+//                String f("f");
+//                if (f == expression) {
+//                    System.out.println("The length is: " + expression.length());
+//                }
             }
-            expression = "f";
-//            expression = in.nextLine();
+
+           expression = in.nextLine();
+            System.out.println("The length is: " + expression.length());
 
         }
-;
+
     }
 
 }
