@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Input expression: ");
+        System.out.println("Enter the expression: ");
         String expression = in.nextLine();
         String f = "f";
 
@@ -29,12 +29,9 @@ public class Main {
                     System.out.println(s.execute(expression, i));
                 }
             }
+            System.out.println("Enter any single symbol if you want to exit.");
+            System.out.println("If you want to continue calculating enter the expression:");
             expression = in.nextLine();
-            for (int i = 0; i < expression.length(); i++) {
-                if (expression.charAt(i) == 'f') {
-                    break;
-                }
-            }
         }
     }
 }
