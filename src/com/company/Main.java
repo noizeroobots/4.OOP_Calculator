@@ -10,7 +10,9 @@ public class Main {
         String expression = in.nextLine();
         String f = "f";
 
-        while (expression != "?" && expression.length() > 1) {
+
+        while (expression.indexOf("f") == -1) {
+//        while (expression != "?" && expression.length() > 1) {
             for (int i = 0; i < expression.length(); i++) {
                 if (expression.charAt(i) == '+') {
                     Plus s = new Plus();
