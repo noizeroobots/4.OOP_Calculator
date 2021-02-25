@@ -1,7 +1,7 @@
 package com.company;
 
 //written by Aleksey Dolgov
-//written on 24.02.2021
+//written on 25.02.2021
 
 public abstract class Operation {
     protected int[] getNums(String expression, int i) {

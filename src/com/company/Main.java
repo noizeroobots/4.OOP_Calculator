@@ -12,7 +12,6 @@ public class Main {
 
 
         while (expression.indexOf("f") == -1) {
-//        while (expression != "?" && expression.length() > 1) {
             for (int i = 0; i < expression.length(); i++) {
                 if (expression.charAt(i) == '+') {
                     Plus s = new Plus();
@@ -31,7 +30,7 @@ public class Main {
                     System.out.println(s.execute(expression, i));
                 }
             }
-            System.out.println("Enter any single symbol if you want to exit.");
+            System.out.println("Enter 'f' if you want to exit.");
             System.out.println("If you want to continue calculating enter the expression:");
             expression = in.nextLine();
         }
