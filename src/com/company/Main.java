@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the expression: ");
+        System.out.println("Enter the expression: (mask: '10+10') ");
         String expression = in.nextLine();
         String f = "f";
 
