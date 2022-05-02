@@ -11,7 +11,7 @@ public class Main {
         String f = "f";
 
 
-        while (expression.indexOf("q") == -1) {
+        while (expression.indexOf("qu") == -1) {
             for (int i = 0; i < expression.length(); i++) {
                 if (expression.charAt(i) == '+') {
                     Plus s = new Plus();
